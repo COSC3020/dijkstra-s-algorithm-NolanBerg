@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/2Wy-Iis-)
 # Dijkstra's Algorithm
 
 Recall the pseudocode for Dijkstra's algorithm:
@@ -19,7 +20,23 @@ The choice of data structures is up to you -- your implementation does not have
 to be the most efficient one, but please make sure that it is not unnecessarily
 inefficient.
 
+Sources: Used ai to help with assignment as well as google for main.yml logic, jest for testing, scripts in package.json file, runtime analysis
+
 ## Runtime Analysis
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+For each vertex dequeued from priority queue, algorithm looks at adjacent vertices:
+
+- Vertex: The algorithm goes through all vertices $(V)$ once in priority queue.
+
+- Edge: For each vertex, it goes through adjacency list, which involves iterating over all edges $(E)$.
+
+Total Complexity
+
+- Priority Queue: Each enqueue operation is $O(E \log V)$ since each edge may potentially lead to a decrease key operation in priority queue.
+
+- Dequeuing: Each dequeue operation happens $(V)$ times and since each operation potentially has sorting, it is $O(V \log V)$.
+
+As both the enqueuing of vertices (once per edge) and the dequeuing (once per vertex) involve log operations, we have a final time complexity of $\Theta((E + V) \log V)$. This assumes that the graph is connected and $E \geq V$.
