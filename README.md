@@ -29,9 +29,9 @@ answer, including your reasoning, to this markdown file.
 
 For each vertex dequeued from priority queue, algorithm looks at adjacent vertices:
 
--Vertex: The algorithm goes through all vertices $(V)$ once in priority queue.
+- Vertex: The algorithm goes through all vertices $(V)$ once in priority queue.
 
--Edge: For each vertex, it goes through adjacency list, which involves iterating over all edges $(E)$.
+- Edge: For each vertex, it goes through adjacency list, which involves iterating over all edges $(E)$.
 
 Total Complexity
 
