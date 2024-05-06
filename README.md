@@ -20,9 +20,15 @@ The choice of data structures is up to you -- your implementation does not have
 to be the most efficient one, but please make sure that it is not unnecessarily
 inefficient.
 
-Sources: Used ai to help with code as well as google for main.yml logic, jest for testing, scripts in package.json file
+Sources: Used ai to help with assignment as well as google for main.yml logic, jest for testing, scripts in package.json file, runtime analysis
 
 ## Runtime Analysis
 
 What is the big $\Theta$ complexity of your implementation? Add your
 answer, including your reasoning, to this markdown file.
+
+For each vertex dequeued from priority queue, algorithm looks at adjacent vertices:
+
+-Vertex: The algorithm goes through all vertices $(V)$ once in priority queue.
+
+-Edge: For each vertex, it goes through adjacency list, which involves iterating over all edges $(E)$.
