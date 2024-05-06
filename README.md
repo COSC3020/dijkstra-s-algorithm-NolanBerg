@@ -39,4 +39,4 @@ Total Complexity
 
 - Dequeuing: Each dequeue operation happens $(V)$ times and since each operation potentially has sorting, it is $O(V \log V)$.
 
-As both the enqueuing of vertices (once per edge) and the dequeuing (once per vertex) involve logarithmic operations, we have a final time complexity of $\Theta((E + V) \log V)$. This assumes that the graph is connected and $E \geq V$.
+As both the enqueuing of vertices (once per edge) and the dequeuing (once per vertex) involve log operations, we have a final time complexity of $\Theta((E + V) \log V)$. This assumes that the graph is connected and $E \geq V$.
