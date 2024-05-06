@@ -32,3 +32,10 @@ For each vertex dequeued from priority queue, algorithm looks at adjacent vertic
 -Vertex: The algorithm goes through all vertices $(V)$ once in priority queue.
 
 -Edge: For each vertex, it goes through adjacency list, which involves iterating over all edges $(E)$.
+
+Total Complexity
+
+- Priority Queue: Each enqueue operation is $O(E \log V)$ since each edge may potentially lead to a decrease key operation in priority queue.
+
+- Dequeuing: Each dequeue operation happens $(V)$ times and since each operation potentially has sorting, it is $O(V \log V)$.
+
