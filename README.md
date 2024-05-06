@@ -20,6 +20,8 @@ The choice of data structures is up to you -- your implementation does not have
 to be the most efficient one, but please make sure that it is not unnecessarily
 inefficient.
 
+Sources: Used ai to help with code as well as google for main.yml logic, jest for testing, scripts in package.json file
+
 ## Runtime Analysis
 
 What is the big $\Theta$ complexity of your implementation? Add your
